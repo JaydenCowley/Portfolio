@@ -1,25 +1,59 @@
-.MenuButtons {
-    height:215px;
-    width:115px;
-    background-color: rgb(235, 226, 226);
-    border-radius: 15px;
-    border-color: rgb(88, 88, 223);
-    border: 5px solid rgb(76, 76, 182);
+:root {
+    --main-bg-color: #408ec6;
+    --main-font-color: #7a2048;
+    --main-bdr-color: #1e2761;
+}
+body {
+    background-color: var(--main-bdr-color);
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    color: var(--main-font-color);
+    background-color: var(--main-bg-color);
+    margin: 25px;
+    border-radius: 25px;
+}
+header h1 {
+    border-bottom: 3px solid var(--main-bdr-color);
+}
+/* Navigation */
+nav {
+    display: inline-flex;
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+    text-align: center; 
+    margin: 10px 20px; 
+    border-radius: 25px;
+}
+nav ul li {
+    margin: 25%;
+    border-bottom: 2px solid var(--main-bdr-color);
+    list-style-type: none;
+    color: var(--main-font-color);
+    font-size: large;
+}
+/* About Me Section */
+.main-content {
+    display: flex;
+    justify-content: right;
+}
+.bio {
+    
+}
+.bio h2 {
+    color: var(--main-font-color);
+    border-bottom: 3px solid var(--main-bdr-color);
+    text-align: center;
+
 }
 
-.Mbtn {
-    height:35px;
-    width:100px;
-    background-color: rgb(204, 64, 64);
-    border-radius: 7px;
-    margin-top: 15px;
-    margin-left: 7.5px;
-
-    }
-
-    .Mbtn:hover {
-        width: 108px;
-        background-color: rgb(rgb(94, 4, 4)
-
-    }
-    
+/* Utilities */
+a {
+    color: var(--main-font-color);
+    text-decoration: none;
+}
+.flex-colomn {
+    flex-direction: column;
+}
