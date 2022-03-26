@@ -44,7 +44,7 @@ nav {
     position: sticky;
     top: 20px;
     margin: 1% 1% 5% 1%;
-    align-items: right;
+    align-items: center;
     z-index: 9999;
     width: 200px;
     height: 500px;
@@ -61,6 +61,7 @@ nav div {
     justify-content: space-around;
     flex-wrap: nowrap;
     text-align: center;
+    
     
     
    
@@ -90,6 +91,18 @@ nav div {
     border-bottom: 3px solid var(--main-bdr-color);
     text-align: center;
     
+}
+.bio img {
+    height: 385px;
+    width: 445px;
+    margin: 0 auto;
+    border-radius: 15px;
+    
+}
+.bio p {
+    font-size: 25px;
+    position: relative;
+    margin: 0 auto;
 }
 /* Website development section */
 
