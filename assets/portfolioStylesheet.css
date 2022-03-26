@@ -34,20 +34,24 @@ footer {
 }
 /* Navigation */
 nav {
-    display: inline-flex;
+    display: inline-flex ;
     background-color: var(--main-bg-color);
     color: var(--main-font-color); 
-    margin: 10px 20px; 
+    margin: 0; 
     border-radius: 25px;
     font-weight: bolder;
-    justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
-    top: 0;
-    margin: 1% 5% 5% 1%;
+    top: 20px;
+    margin: 1% 1% 5% 1%;
     align-items: right;
+    z-index: 9999;
+    width: 200px;
+    height: 500px;
+    
+    
 }
-nav ul li {
+nav div {
     margin: 25%;
     border-bottom: 2px solid var(--main-bdr-color);
     list-style-type: none;
@@ -55,13 +59,19 @@ nav ul li {
     font-size: larger;
     flex-direction: column;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     text-align: center;
+    
+    
+   
 }
 .main-content {
+    display: inline-flex;
     position: relative;
-    top: -540px;
-    margin:15px
+    align-items: flex-end;
+    width: 85%;
+    
+    
 }
 /* About Me Section */
 
@@ -84,6 +94,7 @@ nav ul li {
 /* Website development section */
 
 .website-bubbles div {
+    display: flex;
     border: 2px solid var(--main-bdr-color);
     justify-content: space-around;
     border-radius: 20px;
@@ -92,10 +103,15 @@ nav ul li {
     margin: 10px;
     flex-wrap: wrap;
     align-items: center;
-    flex: 1;
     text-align: center;
-    
-
+    font-size: xx-large;
+}
+.website-bubbles {
+    display: flex;
+    flex-wrap: wrap;
+}
+.website-bubbles>* {
+    flex: 1 1 160px;
 }
 #run-buddy {
     background-image: url(../assets/images/runbuddyscreenshot.png);
@@ -119,6 +135,7 @@ nav ul li {
     margin-left: 12%;
     margin-top: 0;
     margin-bottom:20px;
+    width: 80%;
 }
 
 a {
@@ -131,18 +148,42 @@ a {
 /* Media Quiries */
 
 
-
+@media screen and (max-width: 1760px) {
+    nav {
+        align-self: center;
+        height: 75px;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        width: 96%;
+        }
+    
+    
+    
+    nav div {
+        flex: 1 1 100px;
+        padding: 0%;
+        margin: auto 0;
+        font-size: 25px;
+        align-items: center;
+        border: 0 2px 0 0 solid var(--main-bdr-color);
+    }
+    .main-content{
+        width: 100%;
+        margin-left: 2px;
+        align-items: flex-start;
+        padding-left: 0;
+        
+    }
+    .content-section{
+        margin: 10px 10px;
+    }
+}
 
 
 
 @media screen and (max-width: 980px){
-    nav {
-        position:static;
-        display: flex;
-        flex-grow: 1;
 
     }
-}
         
    
 @media screen and (max-width:768px) {
