@@ -49,7 +49,7 @@ nav {
     width: 200px;
     height: 500px;
     border: 2px solid var(--main-bdr-color);
-    
+    box-shadow: 15px, 15px, 10px, var(--main-font-color);
     
 }
 nav div {
@@ -62,7 +62,8 @@ nav div {
     justify-content: space-around;
     flex-wrap: nowrap;
     text-align: center;
-    height: 25px;
+    height: 45px;
+    width: 155px;
 }
 .nav-button:hover {
     background-color: var(--main-bdr-color);
@@ -164,6 +165,7 @@ nav div {
     margin-top: 0;
     margin-bottom:20px;
     width: 80%;
+    
 }
 
 a {
