@@ -49,7 +49,6 @@ nav {
     width: 200px;
     height: 500px;
     border: 2px solid var(--main-bdr-color);
-    box-shadow: 15px, 15px, 10px, var(--main-font-color);
     
 }
 nav div {
@@ -146,6 +145,10 @@ nav div {
     background-image: url(../assets/images/runbuddyscreenshot.png);
     background-size: auto;
     
+}
+#paradise-paw {
+    background-image: url(../assets/images/Paradise-paw.png);
+    background-size: auto;
 }
 /* Utilities */
 .section-title {
