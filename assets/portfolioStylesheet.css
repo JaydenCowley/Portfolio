@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --main-bg-color: #408ec6;
     --main-font-color: #7a2048;
     --main-bdr-color: #1e2761;
@@ -10,7 +10,7 @@ body {
     background-color: var(--main-bdr-color);
 }
 /* Header */
-header {
+/* header {
     display: flex;
     justify-content: center;
     color: var(--main-font-color);
@@ -31,9 +31,9 @@ footer {
     border-radius: 25px;
     padding: 20px;
     bottom: 0;
-}
+}  */
 /* Navigation */
-nav {
+/* nav {
     display: inline-flex ;
     background-color: var(--main-bg-color);
     color: var(--main-font-color); 
@@ -75,7 +75,7 @@ nav div {
     width: 85%;
     
     
-}
+} */
 /* About Me Section */
 
 .bio {
@@ -126,6 +126,10 @@ nav div {
     flex-wrap: wrap;
     
 }
+.website-bubbles a {
+    text-decoration: solid;
+    font-weight: bold;
+}
 .bubble {
     opacity: .5;
 }
@@ -142,16 +146,21 @@ nav div {
     flex: 1 1 160px;
 }
 #run-buddy {
-    background-image: url(../assets/images/runbuddyscreenshot.png);
+    background-image: url(./images/runbuddyscreenshot.png);
     background-size: auto;
     
 }
 #paradise-paw {
-    background-image: url(../assets/images/Paradise-paw.png);
+    background-image: url(./images/Paradise-paw.png);
     background-size: auto;
 }
+#Weather-app {
+    background-image: url(./images/WeatherApp.png);
+    background-size: auto;
+    background-position: -950px;
+}
 /* Utilities */
-.section-title {
+/* .section-title {
     color: var(--main-font-color);
     border-bottom: 3px solid var(--main-bdr-color);
     text-align: center;
@@ -180,7 +189,7 @@ a {
 }
 /* Media Quiries */
 
-
+/* 
 @media screen and (max-width: 1760px) {
     nav {
         align-self: center;
@@ -224,4 +233,4 @@ a {
     }
 @media screen and (max-width:575px) {
         
-}
+}  */
