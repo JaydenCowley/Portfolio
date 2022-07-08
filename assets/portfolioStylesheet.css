@@ -156,8 +156,12 @@ nav div {
 }
 #Weather-app {
     background-image: url(./images/WeatherApp.png);
-    background-size: auto;
+    background-size: auto ;
     background-position: -950px;
+}
+#fitness-tracker {
+    background-image: url(./images/fitnessApp.png);
+    background-size: auto;
 }
 /* Utilities */
 /* .section-title {
