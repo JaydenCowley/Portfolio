@@ -163,6 +163,10 @@ nav div {
     background-image: url(./images/fitnessApp.png);
     background-size: auto;
 }
+#nikes-on-my-feet-project {
+    background-image: url(./images/nikes.png);
+    background-size: auto;
+}
 /* Utilities */
 /* .section-title {
     color: var(--main-font-color);
